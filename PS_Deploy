@@ -1,0 +1,10 @@
+New-AzVm `
+    -ResourceGroupName "mygroup" `
+    -Name "myVM" `
+    -Location "westeurope" `
+    -Image UbuntuLTS `
+    -size Standard_B1ls `
+    -PublicIpAddressName myPubIP `
+    -OpenPorts 80,22 `
+    -GenerateSshKey `
+    -SshKeyName mySSHKey
